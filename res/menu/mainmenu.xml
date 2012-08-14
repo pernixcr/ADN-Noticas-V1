@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	      <item
+	            android:id="@+id/btRefresh"
+	            android:title="Actualizar"
+	            android:icon="@drawable/refresh">
+	      </item>
+	      <item
+	            android:id="@+id/btListenLastNews"
+	            android:title="Último noticiero"
+	            android:icon="@drawable/audio">
+	      </item>
+
+</menu>

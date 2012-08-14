@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appicon_114" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="69.26" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ADN Noticias"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" >
+
+            <DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DigitalClock"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal|right" >
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View03"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View04"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View05"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View06"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View07"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View08"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View09"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#DCDBC5" />
+
+        <View
+            android:id="@+id/View10"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="#DCDBC5" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+    android:id="@+id/awesomepager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	</android.support.v4.view.ViewPager>
+
+</LinearLayout>

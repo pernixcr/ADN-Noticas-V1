@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adnmain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="75dp"
+                android:layout_height="66dp"
+                android:src="@drawable/appicon_114" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.57" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ADN Noticias"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonLiveStreaming"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/audio"
+            android:focusableInTouchMode="true" android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center_horizontal"
+                android:text="DigitalClock"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="14dp"
+                android:text="Última Actualización"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textViewLastUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="right"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDBC5" >
+
+        <Button
+            android:id="@+id/newNews"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#DCDBC5"
+            android:drawableRight="@drawable/rigtharrow"
+            android:gravity="left"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="24.69"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.69"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="321dp"
+                    android:orientation="vertical"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true" >
+
+                    <TextView
+                        android:id="@+id/adnHoyNewsTitle"
+                        style="@style/categoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adnHoyNews" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/adnHoyNewsScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/adnHoyNewsContainer"
+                            android:layout_width="319dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="none" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF909090" />
+
+                    <TextView
+                        android:id="@+id/nationalNewsTitle"
+                        style="@style/categoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nationalNews" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/nationalNewsScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/nationalNewsContainer"
+                            android:layout_width="319dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="horizontal" />
+                    </HorizontalScrollView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF909090" />
+
+                    <TextView
+                        android:id="@+id/sportNewsTitle"
+                        style="@style/categoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sportNews" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/sportNewsScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/sportNewsContainer"
+                            android:layout_width="319dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="none" />
+                    </HorizontalScrollView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF909090" />
+
+                    <TextView
+                        android:id="@+id/worldNewsTitle"
+                        style="@style/categoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worldNews" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/worldNewsScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/worldNewsContainer"
+                            android:layout_width="319dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="none" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#FF909090" />
+
+                    <Button
+                        android:id="@+id/TermsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:fitsSystemWindows="false"
+                        android:gravity="center_horizontal"
+                        android:onClick="showTermsAndServices"
+                        android:text="Ver Acuerdos De Servicio"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
+</LinearLayout>

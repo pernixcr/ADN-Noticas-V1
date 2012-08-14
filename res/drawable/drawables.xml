@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/ic_launcher"/>
+    <item android:drawable="@drawable/appicon_114"/>
+</animation-list>

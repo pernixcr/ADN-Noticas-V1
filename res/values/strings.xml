@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nationalNewsLabel">Nacionales</string>
+    <string name="sportNewsLabel">Deportes</string>
+    <string name="adnHoyNewsLabel">ADN Hoy</string>
+    <string name="worldNewsLabel">Mundo</string>
+    <string name="app_name">ADN Noticas</string>
+    
+    <string name="nationalNews">Nacionales</string>
+    <string name="sportNews">Deportes</string>
+    <string name="adnHoyNews">ADN Hoy</string>
+    <string name="worldNews">Mundo</string>
+
+</resources>

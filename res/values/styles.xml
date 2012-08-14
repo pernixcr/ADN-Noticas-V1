@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_Categoria">#C0C0C0</color>
+    <color name= "background_Noticias">#000000</color>
+    <color name="texto_Noticia">#FFFFFF</color>
+    <color name="texto_Categoria">#000000</color>
+    <drawable name="drawableRect">#C0C0C0</drawable>
+    
+    <style name="categoryStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">22px</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    
+    <style name="newsTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+</resources>
